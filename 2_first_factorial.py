@@ -4,12 +4,12 @@ the range will be between 1 and 18 and the input will always be an integer. """
 
 def FirstFactorial(num):
 
-  # code goes here
-  if num == 1:
-    return 1
-  else:
-    num = num*FirstFactorial(num-1)
-    return num
+    # code goes here
+    if num == 1:
+      return 1
+    else:
+      num = num*FirstFactorial(num-1)
+      return num
 
 # keep this function call here
 print(FirstFactorial(input()))

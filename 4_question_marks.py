@@ -15,26 +15,26 @@ import re
 
 def QuestionsMarks(strParam):
 
-  # code goes here
-  qmark_count = 0
-  digits = []
-  output = False
-  stripped = re.sub("[A-Za-z]", "", strParam)
-  for x in stripped:
-      if x == "?" and len(digits) != 0:
-          qmark_count += 1
-      if x.isdigit():
-          digits.append(int(x))
-          if len(digits) == 1:
-              qmark_count = 0
-          if len(digits) == 2:
-              if digits[0]+digits[1] == 10:
-                  if qmark_count == 3:
-                    output = True
-              else:
-                  digits = [digits[1]]
-              qmark_count = 0
-  return output
+      # code goes here
+      qmark_count = 0
+      digits = []
+      output = False
+      stripped = re.sub("[A-Za-z]", "", strParam)
+      for x in stripped:
+          if x == "?" and len(digits) != 0:
+              qmark_count += 1
+          if x.isdigit():
+              digits.append(int(x))
+              if len(digits) == 1:
+                  qmark_count = 0
+              if len(digits) == 2:
+                  if digits[0]+digits[1] == 10:
+                      if qmark_count == 3:
+                        output = True
+                  else:
+                      digits = [digits[1]]
+                  qmark_count = 0
+      return output
 
 # keep this function call here
 print(QuestionsMarks(input()))

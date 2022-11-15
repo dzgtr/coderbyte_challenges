@@ -8,14 +8,14 @@ import re
 
 def LongestWord(sen):
 
-  # code goes here
-  longest = ""
-  stripped = re.sub('[^A-Za-z0-9\ ]+', '', sen)
-  words = stripped.split()
-  for word in words:
-    if len(word)>len(longest):
-      longest = word
-  return longest
+    # code goes here
+    longest = ""
+    stripped = re.sub('[^A-Za-z0-9\ ]+', '', sen)
+    words = stripped.split()
+    for word in words:
+      if len(word)>len(longest):
+        longest = word
+    return longest
 
 # keep this function call here
 print(LongestWord(input()))

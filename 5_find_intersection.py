@@ -7,16 +7,16 @@ If there is no intersection, return the string false. """
 
 def FindIntersection(strArr):
 
-  # code goes here
-  intersection = []
-  list1 = strArr[0].split(", ")
-  list2 = strArr[1].split(", ")
-  for x in range(len(list1)):
-    for y in range(len(list2)):
-      if list1[x] == list2[y]:
-        intersection.append(list1[x])
-  result = ",".join(intersection)
-  return result
+    # code goes here
+    intersection = []
+    list1 = strArr[0].split(", ")
+    list2 = strArr[1].split(", ")
+    for x in range(len(list1)):
+      for y in range(len(list2)):
+        if list1[x] == list2[y]:
+          intersection.append(list1[x])
+    result = ",".join(intersection)
+    return result
 
 # keep this function call here
 print(FindIntersection(input()))
