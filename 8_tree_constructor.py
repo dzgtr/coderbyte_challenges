@@ -43,9 +43,9 @@ def TreeConstructor(strArr):
     return True
 
 # keep this function call here
-print(TreeConstructor(["(2,5)", "(2,6)"]))
-print("True:")
+print("Should be true:")
 print(TreeConstructor(["(1,2)", "(2,4)", "(5,7)", "(7,2)", "(9,5)"]))
-print("False:")
+print("Should be false:")
 print(TreeConstructor(["(1,2)", "(3,2)", "(2,12)", "(5,2)"]))
 print(TreeConstructor(["(2,3)", "(1,2)", "(4,9)", "(9,3)", "(12,9)", "(6,4)", "(1,9)"]))
+print(TreeConstructor(["(2,5)", "(2,6)"]))
