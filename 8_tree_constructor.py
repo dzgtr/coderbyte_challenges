@@ -20,16 +20,14 @@ def TreeConstructor(strArr):
 
     new_array = []
     parents = {}
-    children = {}
+    children = set()
     for item in strArr:
         newitem = re.sub("[()]", "", item)
         new_array.append(newitem.split(","))
     for item in new_array:
         if item[0] not in children:
-            children[item[0]] = 1
+            children.add(item[0])
         else:
-            children[item[0]] += 1
-        if children[item[0]] > 2:
             return False
 
         if item[1] not in parents:
