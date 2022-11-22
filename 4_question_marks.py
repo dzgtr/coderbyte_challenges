@@ -41,6 +41,4 @@ def QuestionsMarks(strParam):
       return output
 
 # keep this function call here
-#print(QuestionsMarks(input()))
-print(QuestionsMarks("acc?7??sss?3rr1??????5"))
-print(QuestionsMarks("2???8aaaaaaaaaaa"))
+print(QuestionsMarks(input()))
