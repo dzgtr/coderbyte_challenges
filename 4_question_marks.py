@@ -31,10 +31,16 @@ def QuestionsMarks(strParam):
                   if digits[0]+digits[1] == 10:
                       if qmark_count == 3:
                         output = True
-                  else:
-                      digits = [digits[1]]
+                      else:
+                        output = False
+                        break
                   qmark_count = 0
+                  helper = digits[1]
+                  digits.clear()
+                  digits.append(helper)
       return output
 
 # keep this function call here
-print(QuestionsMarks(input()))
+#print(QuestionsMarks(input()))
+print(QuestionsMarks("acc?7??sss?3rr1??????5"))
+print(QuestionsMarks("2???8aaaaaaaaaaa"))

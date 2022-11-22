@@ -16,7 +16,11 @@ def FindIntersection(strArr):
         if list1[x] == list2[y]:
           intersection.append(list1[x])
     result = ",".join(intersection)
-    return result
+    if result == "":
+        return "false"
+    else:
+        return result
 
 # keep this function call here
-print(FindIntersection(input()))
+print(FindIntersection(["1, 2, 3, 4, 5", "6, 7, 8, 9, 10"]))
+#print(FindIntersection(input()))
